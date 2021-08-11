@@ -1,0 +1,6 @@
+Служит для получения удобства get+post
+
+Пример
+
+$method = $_SERVER['pswd'];
+echo "Your password is $pswd";

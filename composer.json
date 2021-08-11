@@ -1,0 +1,8 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.18",
+      "ext-simplexml": "*",
+        "fpdf/fpdf": "^1.83",
+        "imangazaliev/didom": "^1.18"
+    }
+}

@@ -1,0 +1,3 @@
+select * from employees as em left join departments as dep on em.department_id = dep.id where em.age > 18;
+select departments.id, departments.name, (select count(employees.id) from employees where employees.department_id = departments.id) as employees from departments;
+select departments.id, departments.name, (select max(employees.salary) from employees where employees.department_id = departments.id) as employeeWithMaxPayment from departments;

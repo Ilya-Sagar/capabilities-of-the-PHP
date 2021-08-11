@@ -1,0 +1,9 @@
+Служить для получении информации о сервере и запросе
+
+Пример:
+
+$root = $_SERVER['DOCUMENT_ROOT'];
+require_once $root . '...';
+
+$url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+Router::run($url);
