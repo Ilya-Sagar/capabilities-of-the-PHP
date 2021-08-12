@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body form {
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.5em;
+        }
+        body form input {
+            margin-bottom: 1em;
+            font-size: inherit;
+        }
+        .modal {
+            height: 100px;
+            width: 300px;
+            position: absolute;
+            left: 40%;
+            top: 2em;
+            font-size: 1.5em;
+            background-color: lightblue;
+        }
+        .modal .close {
+            position: absolute;
+            display: inline-block;
+            bottom: 0;
+            right: 0;
+            cursor: pointer;    
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name, only A-Z, А-Я, space</label>
+        <input id="name" type="text">
+
+        <label for="age">Age, only numbers</label>
+        <input id="age" type="number">
+
+        <label for="phone">Phone, only numbers, (, ), -, space</label>
+        <input id="phone" type="text">
+
+        <label for="salary">Salary, only numbers</label>
+        <input id="salary" type="number">
+
+        <label for="department">Department, only A-Z, А-Я, space</label>
+        <input id="department" type="text">
+
+        <input id="button" type="button" value="Go">
+    </form>
+    <section class="modal">
+        <span></span>
+        <div class="close">X</div>
+    </section>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
