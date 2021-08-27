@@ -1,7 +1,0 @@
-Служит для получения данных методом пост
-
-Пример:
-
-$login = $_POST['login'];
-$pswd = $_POST['password'];
-authenticate($login, $pswd);

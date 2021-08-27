@@ -1,9 +1,0 @@
-Массив с куками
-
-$isLoggedIn = $_COOKIE['isLoggedIn'];
-
-if($isLoggedIn) {
-    authenticate($_COOKIE['toke'];
-} else {
-    show_error('Permission denied', 403)
-}
